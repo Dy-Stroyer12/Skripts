@@ -1,0 +1,4 @@
+command /skull [<offline player>]:
+	permission: commands.skull
+	trigger:
+		give player skull of arg-1
