@@ -1,0 +1,3 @@
+command /trash:
+	trigger:
+		open new chest inventory named "Trash" with 3 rows to player
