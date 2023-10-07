@@ -1,0 +1,8 @@
+command /heal [<player>]:
+	permission: commands.heal
+	trigger:
+		set {_p} to arg-1
+		if arg-1 is not set:
+			set {_p} to player
+		heal {_p}
+		send "&eHealed &a%{_p}%"
