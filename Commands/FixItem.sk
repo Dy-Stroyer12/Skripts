@@ -1,0 +1,4 @@
+command /fix:
+	permission: commands.fix
+	trigger:
+		repair tool of player

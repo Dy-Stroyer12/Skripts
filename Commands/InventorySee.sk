@@ -1,0 +1,6 @@
+command /inventorysee <player>:
+  aliases: /invsee
+	permission: commands.invsee
+	executable by: players
+	trigger:
+		open inventory of arg-1 to player
