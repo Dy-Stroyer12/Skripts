@@ -1,0 +1,4 @@
+command /rename <text>:
+	permission: commands.rename
+	trigger:
+		set name of tool of player to arg-1
