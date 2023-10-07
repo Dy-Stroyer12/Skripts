@@ -1,0 +1,12 @@
+command /fly [<player>]:
+	permission: commands.flight
+	trigger:
+		set {_p} to arg-1
+		if arg-1 is not set:
+			set {_p} to player
+		if flight mode of {_p} is true:
+			set flight mode of {_p} to false
+			send "&eFlight &4disabled &efor &a%{_p}%"
+		else:
+			set flight mode of {_p} to true
+			send "&eFlight &aenabled &efor &a%{_p}%"
